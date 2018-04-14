@@ -5,7 +5,7 @@ request.open('GET', url);
 request.responseType = 'json';
 request.onload = function() {
   
-  document.querySelector('a').innerHTML = "Today in " + request.response.name +":" ;
+  document.querySelector('a').innerHTML = "Today in " + request.response.name +":" + request.response.main.temp + "°C" ;
   
   console.log(request.response)
   
