@@ -1,10 +1,15 @@
 //weather nav
 
 #weather{
-
+    
     background:$blue;
     padding:10px 15px;
-
+    transition: 1s  all ease;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 998;
+    
     a{
         color:$white;
         font-size: $small-font;
@@ -15,67 +20,67 @@
 }
 
 
-   .navigation{
-       background:$white;
-     
-     #navigation{
-         background:$white !important; 
-         max-width: 1440px !important;
-         margin:0 auto;
-         .brand{
-            a{
-                font-size: $small-font;
-                color:$blue;
-                font-weight: 600;
+#navigation{
+    background:$white;
+    width:100%;
+    margin:0 auto;
+    z-index: 997;
+    // height:100px;
+    transition: 1s ease;
+    position:fixed;
+    top:45px;
+    left:0;
+    .brand{
+        a{
+            font-size: $small-font;
+            color:$blue;
+            font-weight: 600;
+        }
+        #balloon{
+            
+            fill:$blue;
+            &:hover{
+                transform: scale(1.05);
+                transition:1s all;
             }
-            #balloon{
-                height:100px;
-                fill:$blue;
-                &:hover{
-                    transform: scale(1.05);
-                    transition:1s all;
-                }
-            }
-         }
-         .menu{
-             ul{
-                li{
-                    list-style-type: none;
-                    margin:30px;
-             .dropdown-toggle:hover::after{
-                
+        }
+    }
+    .menu{
+        ul{
+            li{
+                list-style-type: none;
+                margin:30px;
+                .dropdown-toggle:hover::after{
                     padding:15px;
                     display:none;
-                 
-             }
-                    a{
-                        font-size: $small-font;
-                        font-weight: 600;
-                        // padding:15px;
-                        text-decoration: none;
-                        color:$blue;
-                      
-                        &:hover{
-                            background-color:$blue;
-                            color:$white;
-                            border-radius: 5px;
-                        }
-                    }
-                    .myDropdown{
-                        background:$blue;
-                       a{
-                        color:$white;
-                       }
-                    }
-                
-
+                    
                 }
+                a{
+                    font-size: $small-font;
+                    font-weight: 600;
+                    padding:15px;
+                    text-decoration: none;
+                    color:$blue;
+                    
+                    &:hover{
+                        background-color:$blue;
+                        color:$white;
+                        border-radius: 5px;
+                    }
+                }
+                .myDropdown{
+                    background:$blue;
+                    a{
+                        color:$white;
+                    }
+                }
+                
+                
+            }
+            
+        }
+    }
+}
 
-             }
-         }
 
 
-
-     }
-
-   }
