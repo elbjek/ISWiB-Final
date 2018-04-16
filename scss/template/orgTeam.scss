@@ -1,12 +1,13 @@
 .orgTeam{
-    
-    background-color: $orange;
-    
-    
+
+    background-color:rgb(250, 160, 25); 
+    // z-index: 2;
+//ADD BACKGROUND HERE
     h1{
         font-size: $large-font;
         font-weight: lighter;
         color:$white;
+       
         padding:$padding;
         &::after{
             content:"Team";
@@ -18,32 +19,42 @@
         font-weight: 400;
         color:$white;
         margin:40px 0px;
-        font-size: 24px;
+        font-size: 20px;
     }
     
     ul{
         text-align: center;
         .myCollapse{
             background-color: $white;
-            background-color: rgba(245, 245, 245, 0.6);
-            
+            background-color: rgba(245, 245, 245, 0.4);
+            padding:60px;
+            margin:0px;  
+            text-align: center;
             img{
-               max-height:400px;
+                max-height:450px;
+                width:100%;
+                padding:20px;
             }
             p{
                 margin:0px;
                 font-weight: bolder;
+                width:100%;
             }
-
         }
-        li{
-a{
-    font-size: 22px;
-    font-weight: bolder;
-    color:$white;
-}
-            
-        }
+        
     }
-    
+    li{
+        &:last-of-type{
+            margin-bottom: 80px;
+        }
+        a{
+            font-size: 22px;
+            font-weight: bolder;
+            color:$white;
+          
+        }
+        
+    }
 }
+
+

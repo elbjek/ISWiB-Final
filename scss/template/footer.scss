@@ -1,11 +1,28 @@
-footer {
-	display: block;
-	width: 100vw;
-	min-height: 20px;
-	background-color: $light-blue;
-	color: $white;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	padding: 10px 15px;
+#footer{
+ul{
+	padding:80px 15px;
+	li{
+		&:first-child{
+			border-bottom:2px solid $orange;
+			font-weight: 900;
+		}
+		a{
+			color:$blue;
+			// font-size: 14px;
+			line-height: 0px;
+			font-size: 16px;
+		}
+	}
 }
+
+
+}
+.copyright{
+	background-color: $blue;
+p,a{
+color:$white;
+font-size:16px;
+padding:30px;
+}
+
+	}
