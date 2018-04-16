@@ -5,10 +5,7 @@
     background:$blue;
     padding:10px 15px;
     transition: 1s  all ease;
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 998;
+
     
     a{
         color:$white;
@@ -27,9 +24,7 @@
     z-index: 997;
     // height:100px;
     transition: 1s ease;
-    position:fixed;
-    top:45px;
-    left:0;
+
     .brand{
         a{
             font-size: $small-font;
