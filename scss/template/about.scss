@@ -18,7 +18,7 @@
     
     p{
         font-size: 26px;
-        width:100%;
+      
         color:$blue;
         font-weight: $light;
         line-height: 40px;
@@ -33,167 +33,22 @@
         font-weight:$bold;
         color:$blue;
     }
-    
-    
-    
-    
+    // .skew{
+    //     width:50%;
+    //     height:100px;
+    //     background-color:pink;
+    //     position: absolute;
+    //     transform: skew(0,3deg);
+    //     top:120%;
+    // }
+    // .skewRight{
+    //     width:50%;
+    //     height:100px;
+    //     background-color:$white;
+    //     position: absolute;
+    //     transform: skew(0,-3deg);
+    //     bottom:0%;
+    //     right:0;
+    // }
 }
-
-.third{
-    
-    background-color:$blue;
-    position: relative;
-    text-align: center;
-    .skew{
-        width:50%;
-        height:100px;
-        background-color:$white;
-        position: absolute;
-        transform: skew(0,3deg);
-        bottom:95%;
-    }
-    .skewRight{
-        width:50%;
-        height:100px;
-        background-color:$white;
-        position: absolute;
-        transform: skew(0,-3deg);
-        bottom:95%;
-        right:0;
-    }
-    
-    
-    .content{
-        padding-top:10%;
-        
-        h1{
-            font-size:$large-font;
-            color:$white;
-        }
-        .box{
-            
-            padding:20px 0px;
-            background-color:$white;
-            margin:30px 30px 80px 30px;
-            display:flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items:center;
-         
-            
-            h2{
-                font-size: $font-30;
-                color:$blue;
-                height:40px;
-                margin-top:30px;
-            }
-            hr{
-                height:2px;
-                width:50%;
-                background-color: $orange;
-            }
-            p{
-                width:80%;
-                color:$blue;
-                margin-bottom: 30px;
-            }
-            
-            .button-orange{
-                font-size:$medium-font;
-                padding:10px 40px;
-                background-color: $orange;
-                border-radius: 30px;
-                font-weight:$bold;
-                color:$blue;
-            }
-            
-            &:hover #wheel{
-                
-                animation:wheel-rotation;
-                animation-duration: 2s;
-                animation-duration: 2s ease;
-                
-                @keyframes wheel-rotation{
-                    0%{
-                        transform-origin: center;
-                        transform: rotate(0);
-                    }
-                    100%{
-                        transform-origin: center;
-                        transform: rotate(360deg);
-                    }
-                    
-                }
-            }
-            #world{
-                height:45px;
-                fill:$orange;
-                width:45px;
-            }
-            
-            &:hover #world{
-                
-                animation:world-rotation;
-                animation-duration: 2s;
-                
-                
-                @keyframes world-rotation{
-                    0%{
-                        transform-origin: center;
-                        transform: rotate(0);
-                    }
-                    100%{
-                        transform-origin: center;
-                        transform: rotate(360deg);
-                    }
-                    
-                }
-            }
-            #conference{
-                height:60px;
-                fill:$orange;
-                margin:0px;
-                padding:0px;
-                width:60px;   
-            }
-            #bubble{
-                visibility:hidden;
-            }
-            &:hover #bubble{
-                animation: bubble-move 1.5s ease;
-                
-                @keyframes bubble-move{
-                    0%{
-                        transform:translateX(450px);
-                      visibility: visible;
-                      opacity: 0;
-                    }
-                    100%{
-                        transform:translateX(20px);
-                        opacity:1;
-                    }
-                }
-                
-            }
-            #coaster{
-                fill:$orange;
-                height:53px;
-            }
-            &:hover .carTwo{
-                animation:car-move 1.5s ease;
-                @keyframes car-move{
-                    
-                    100%{
-                        transform:translate(30px) rotate(40deg) ;
-                        transform-origin: bottom;
-                    }
-                }
-            }
-            
-        }
-
-        
-    }
-}
-
 

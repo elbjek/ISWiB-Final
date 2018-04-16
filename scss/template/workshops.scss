@@ -1,0 +1,21 @@
+.workshops{
+    h1{
+        font-size: $large-font;
+        font-weight: 300;
+        color:$blue;
+        padding: $padding;
+    }
+    p{
+        font-size: 24px;
+    
+        color:$blue;
+        font-weight: $light;
+        line-height: 32px;
+        padding: 40px 0px 80px 0px;
+        text-align: center;
+        a{
+            font-weight: 800;
+            color:$blue;
+        }
+    }
+}

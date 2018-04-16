@@ -1,0 +1,157 @@
+.third{
+    
+    background-color:$blue;
+    position: relative;
+    padding: 80px;
+    text-align: right;
+
+    .content{
+        text-align: center;
+       
+        .circle{
+            margin:0 auto;
+        }
+        h1{
+            font-size:$large-font;
+            color:$white;
+            margin:50px 0px 50px 0px;
+        }
+        .box{ 
+            padding:20px 30px;
+            background-color:$white;
+            margin:20px;
+         
+           
+            
+            h2{
+                font-size: $font-30;
+                color:$blue;
+                height:40px;
+                margin:10px 0px 10px 0px;
+            }
+            hr{
+                height:2px;
+                width:40%;
+                background-color: $orange;
+                margin:0 auto;
+            }
+            p{
+                // width:0%;
+                color:$blue;
+                margin-bottom: 30px;
+                text-align: left;
+                font-size: 18px;
+            }
+            
+            .button-orange{
+                font-size:$medium-font;
+                padding:10px 40px;
+                background-color: $orange;
+                border-radius: 30px;
+                font-weight:$bold;
+                color:$blue;
+            }
+            
+            &:hover #wheel{
+                
+                animation:wheel-rotation;
+                animation-duration: 2s;
+                animation-duration: 2s ease;
+                
+                @keyframes wheel-rotation{
+                    0%{
+                        transform-origin: center;
+                        transform: rotate(0);
+                    }
+                    100%{
+                        transform-origin: center;
+                        transform: rotate(360deg);
+                    }
+                    
+                }
+            }
+            #world{
+                height:45px;
+                fill:$orange;
+                width:45px;
+            }
+            
+            &:hover #world{
+                
+                animation:world-rotation;
+                animation-duration: 2s;
+                
+                
+                @keyframes world-rotation{
+                    0%{
+                        transform-origin: center;
+                        transform: rotate(0);
+                    }
+                    100%{
+                        transform-origin: center;
+                        transform: rotate(360deg);
+                    }
+                    
+                }
+            }
+            #conference{
+                height:60px;
+                fill:$orange;
+                margin:0px;
+                padding:0px;
+                width:60px;   
+            }
+            #bubble{
+                visibility:hidden;
+            }
+            &:hover #bubble{
+                animation: bubble-move 1.5s ease;
+                
+                @keyframes bubble-move{
+                    0%{
+                        transform:translateX(450px);
+                      visibility: visible;
+                      opacity: 0;
+                    }
+                    100%{
+                        transform:translateX(20px);
+                        opacity:1;
+                    }
+                }
+                
+            }
+            #coaster{
+                fill:$orange;
+                height:53px;
+            }
+            &:hover .carTwo{
+                animation:car-move 1.5s ease;
+                @keyframes car-move{
+                    
+                    100%{
+                        transform:translate(30px) rotate(40deg) ;
+                        transform-origin: bottom;
+                    }
+                }
+            }
+            
+        }
+    }
+    //many more
+ .more{
+     margin:0 auto;
+    h5{
+        color:$white;
+        margin:50px 0px 10px 0px ;
+        
+
+    }
+    hr{
+        height:3px;
+        background-color: $white;
+        width:100%;
+    }
+ }
+}
+
+
