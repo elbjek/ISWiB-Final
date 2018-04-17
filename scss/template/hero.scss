@@ -1,178 +1,64 @@
-
-
-.downTriangle{
-    background: rgb(250, 160, 25);
-    height:75vh;
-    display:flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color:$white;
+.hero{
+    
+    background-color: $orange;
     position: relative;
-    .background{
-        opacity: 0.3;
-        background:rgb(250, 160, 25); 
-        background-image: url('../img/mainHero2.jpg');
-        background-blend-mode: overlay;
-        height:100%;
-        width:100%;
-        box-shadow: 0 0 70px 20px $orange inset;
-        background-size:cover;
-        background-repeat: no-repeat;
-    }
-
-    h5{
-        font-family: Lost in Wild;
-        color:$blue;
-        z-index: 2;
-        font-size: 24px;
-        position: absolute;
-        top:35%;
-        -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        @-webkit-keyframes slide-in-left {
-            0% {
-                -webkit-transform: translateX(-1000px);
-                transform: translateX(-1000px);
-                opacity: 0;
-            }
-            100% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        @keyframes slide-in-left {
-            0% {
-                -webkit-transform: translateX(-1000px);
-                transform: translateX(-1000px);
-                opacity: 0;
-            }
-            100% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-    }
-    h6{
-        font-family: Lost in Wild;
-        color:$blue;
-        z-index: 1;
-        position: absolute;
-        top:72%;
-        left:50%;
-        font-size: 20px;
-        -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        
-        @-webkit-keyframes slide-in-right {
-            0% {
-                -webkit-transform: translateX(1000px);
-                transform: translateX(1000px);
-                opacity: 0;
-            }
-            100% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        @keyframes slide-in-right {
-            0% {
-                -webkit-transform: translateX(1000px);
-                transform: translateX(1000px);
-                opacity: 0;
-            }
-            100% {
-                -webkit-transform: translateX(0);
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        
-    }
-
-    // MAIN HEADER
-
-    h1{
-        font-family: Lost in Wild;
-        position: absolute;
-        font-size: 120px;
-        display:flex;
-        top:45%;
-        -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-        animation: tracking-in-contract 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-   
-        p{
-            font-size: 90px;
-            &:last-of-type{
-              font-size: 120px;
-                transform: rotate(6deg);
-            }
-        }
-    
-        
-        @-webkit-keyframes tracking-in-contract {
-            0% {
-                letter-spacing: 1em;
-                opacity: 0;
-            }
-            40% {
-                opacity: 0.6;
-            }
-            100% {
-                letter-spacing: normal;
-                opacity: 1;
-            }
-        }
-        @keyframes tracking-in-contract {
-            0% {
-                letter-spacing: 1em;
-                opacity: 0;
-            }
-            40% {
-                opacity: 0.6;
-            }
-            100% {
-                letter-spacing: normal;
-                opacity: 1;
-            }
-        }
-        
-        
-    }
-    &::after{
-        content: " ";
-        z-index: 100;
-        position:absolute;
-        background-color:$orange;
-        height:100px;
-        width:50%;
-        transform:skew(0,3deg);
-        top:640px;
-        margin:0;
-        padding:0;
-        left:0;
-        z-index: -1;
-        
-    }
-    &::before{
-        content: " ";
-        z-index: 100;
-        position:absolute;
-        background-color:$orange;
-        height:100px;
-        width:50%;
-        transform:skew(0,-3deg);
-        top:640px;
-        margin:0;
-        padding:0;
-        right:0;
-        z-index:-2;
-    }
-    
+&::before{
+    background-image: url('../img/mainHero.jpg');
+    background-position: center;
+    background-blend-mode: overlay;
+    width:auto;
+    height:600px;
+    content:"";
 }
+    .content{
+        padding-top:10%;
+        padding-bottom: 8%;
+      
+        display: flex;
+        flex-direction:column;
+        
+        h1,h4,h5{
+            font-family: Lost in Wild;
+            padding:0px;
+            color:$blue;
+        }
+        h1{
+            font-size:150px;
+            padding-top: 20px;
+            color:$white;
+        }
 
+        h4{
+            padding-bottom: 100px;
+            text-align: left;
 
+        }
+    }
+    
+    .skew{
+        width:50%;
+        height:100px;
+        background-color:$orange;
+        position: absolute;
+        transform: skew(0,3deg);
+        margin:0px;
+        left:0px;
+        top:90%
+    }
+    .skewRight{
+        width:50%;
+        height:100px;
+        background-color:$orange;
+        position: absolute;
+        transform: skew(0,-3deg);
+        right:0px;
+        margin:0px;
+        top:90%;
+    }
+}
+@media only screen and (max-width: 600px) {
+   
+    h1{
+font-size:80px;
+    }
+}
