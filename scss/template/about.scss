@@ -1,9 +1,7 @@
 #content{ 
-    
-    padding:10%;
-    
+    padding:80px 15px 50px 15px;
     h1{
-        font-size: 72px;
+        font-size: $large-font;
         font-weight: 300;
         color:$blue;
         padding-top: 80px;
@@ -18,7 +16,7 @@
     
     p{
         font-size: 26px;
-      
+        
         color:$blue;
         font-weight: $light;
         line-height: 40px;
@@ -33,22 +31,28 @@
         font-weight:$bold;
         color:$blue;
     }
-    // .skew{
-    //     width:50%;
-    //     height:100px;
-    //     background-color:pink;
-    //     position: absolute;
-    //     transform: skew(0,3deg);
-    //     top:120%;
-    // }
-    // .skewRight{
-    //     width:50%;
-    //     height:100px;
-    //     background-color:$white;
-    //     position: absolute;
-    //     transform: skew(0,-3deg);
-    //     bottom:0%;
-    //     right:0;
-    // }
+    .skew{
+        width:50%;
+        height:100px;
+        background-color:$white;
+        position: absolute;
+        transform: skew(0,3deg);
+        z-index: 6;
+        margin:0px;
+        left:0px;
+    }
+    .skewRight{
+        width:50%;
+        height:100px;
+        background-color:$white;
+        position: absolute;
+        transform: skew(0,-3deg);
+        z-index:5;
+        right:0px;
+        margin:0px;
+    }
+    
+    
+    
 }
 

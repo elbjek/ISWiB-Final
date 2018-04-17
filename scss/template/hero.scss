@@ -25,7 +25,7 @@
         font-family: Lost in Wild;
         color:$blue;
         z-index: 2;
-        font-size: 1.6vw;
+        font-size: 24px;
         position: absolute;
         top:35%;
         -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -63,7 +63,7 @@
         position: absolute;
         top:85%;
         left:50%;
-        font-size: 1.2vw;
+        font-size: 20px;
         -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         
@@ -93,18 +93,22 @@
         }
         
     }
+
+    // MAIN HEADER
+
     h1{
         font-family: Lost in Wild;
         position: absolute;
-        font-size: 8vw;
+        font-size: 120px;
         display:flex;
-        top:60%;
+        top:45%;
         -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         animation: tracking-in-contract 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+   
         p{
-            font-size: 6vw;
+            font-size: 90px;
             &:last-of-type{
-              font-size: 8vw;
+              font-size: 120px;
                 transform: rotate(6deg);
             }
         }

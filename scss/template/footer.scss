@@ -1,28 +1,28 @@
 #footer{
-ul{
-	padding:80px 15px;
-	li{
-		&:first-child{
-			border-bottom:2px solid $orange;
-			font-weight: 900;
-		}
-		a{
-			color:$blue;
-			// font-size: 14px;
-			line-height: 0px;
-			font-size: 16px;
+	ul{
+		padding:80px 15px;
+		li{
+			&:first-child{
+				border-bottom:2px solid $orange;
+				font-weight: 900;
+			}
+			a{
+				color:$blue;
+				// font-size: 14px;
+				line-height: 0px;
+				font-size: 16px;
+			}
 		}
 	}
-}
-
-
+	
+	
 }
 .copyright{
 	background-color: $blue;
-p,a{
-color:$white;
-font-size:16px;
-padding:30px;
-}
-
+	p,a{
+		color:$white;
+		font-size:16px;
+		padding:30px;
 	}
+	
+}
