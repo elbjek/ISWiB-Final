@@ -2,7 +2,7 @@
 
 .downTriangle{
     background: rgb(250, 160, 25);
-    height:70vh;
+    height:75vh;
     display:flex;
     text-align: center;
     justify-content: center;
@@ -61,7 +61,7 @@
         color:$blue;
         z-index: 1;
         position: absolute;
-        top:85%;
+        top:72%;
         left:50%;
         font-size: 20px;
         -webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

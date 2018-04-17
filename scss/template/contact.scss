@@ -1,0 +1,23 @@
+.contact{
+    
+    
+    h1{
+        
+        font-size: $large-font;
+        color:$blue;
+    }
+    .address{
+        margin:0 auto;
+        
+        
+        h2{
+            color:$blue;
+            font-size: 30px;
+        }
+        hr{
+            height:1px;
+            background-color: $orange;
+            width:100%;
+        }
+    }
+}
