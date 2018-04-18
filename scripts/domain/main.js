@@ -1,6 +1,40 @@
+
+function isScrolled(){
+    var scrolled = window.pageYOffset;
+    
+    var weather = document.getElementById("weather");
+    var nav = document.getElementById("navigation");
+    var announce = document.getElementById("announcement");
+    const newLocal = document.getElementById("balloon");
+    var ball = newLocal;
+    if (scrolled > 45){
+        
+        weather.style.display="none";
+        nav.classList.add('sticky');
+        announce.style.display="none";
+        ball.style.display="none";
+        console.log("radi");
+    }
+    else{
+        weather.style.display="block";
+        announce.style.display="block";
+        
+    }
+}
+
+
+
+window.addEventListener('scroll',isScrolled);
+
+
+
 var form = document.querySelector('form');
 
-console.log(form);
+// console.log(form.length[0]);
+
+
+
+
 form.addEventListener("submit",function(event){
     
     event.preventDefault();

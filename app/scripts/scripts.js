@@ -1,8 +1,48 @@
 'use strict';
 
+agCookie.create('example-cookie', true, 1);
+
+var readValue = agCookie.read('example-cookie');
+
+console.log(readValue);
+
+agCookie.erase('example-cookie');
+
+function markoFunkcija(args) {
+    console.log(args);
+
+    return true;
+}
+"use strict";
+
+function isScrolled() {
+    var scrolled = window.pageYOffset;
+
+    var weather = document.getElementById("weather");
+    var nav = document.getElementById("navigation");
+    var announce = document.getElementById("announcement");
+    var newLocal = document.getElementById("balloon");
+    var ball = newLocal;
+    if (scrolled > 45) {
+
+        weather.style.display = "none";
+        nav.classList.add('sticky');
+        announce.style.display = "none";
+        ball.style.display = "none";
+        console.log("radi");
+    } else {
+        weather.style.display = "block";
+        announce.style.display = "block";
+    }
+}
+
+window.addEventListener('scroll', isScrolled);
+
 var form = document.querySelector('form');
 
-console.log(form);
+// console.log(form.length[0]);
+
+
 form.addEventListener("submit", function (event) {
 
     event.preventDefault();
@@ -53,40 +93,4 @@ form.addEventListener("submit", function (event) {
         document.querySelector('.myTextarea').style.display = "none";
     }
 });
-'use strict';
-
-agCookie.create('example-cookie', true, 1);
-
-var readValue = agCookie.read('example-cookie');
-
-console.log(readValue);
-
-agCookie.erase('example-cookie');
-
-function markoFunkcija(args) {
-    console.log(args);
-
-    return true;
-}
 "use strict";
-
-function isScrolled() {
-    var scrolled = window.pageYOffset;
-
-    var weather = document.getElementById("weather");
-    var nav = document.querySelectorAll("myNav");
-    var announce = document.getElementById("announcement");
-    console.log(nav.length);
-    // if (scrolled > 45){
-    //     weather.style.display="none";
-    //     nav.classList.add('sticky');
-    //     // announce.style.display="none";
-    //     console.log("radi");
-    // }
-    // else{
-
-
-    // }
-}
-
-window.addEventListener('scroll', isScrolled);

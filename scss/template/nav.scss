@@ -17,7 +17,7 @@
 }
 
 
-.myNav{
+#navigation{
     background:$white;
     width:100%;
     margin:0 auto;
@@ -30,7 +30,8 @@
             font-weight: 600;
         }
         #balloon{
-   
+            height:90px;
+            display:none;
             fill:$blue;
             &:hover{
                 transform: scale(1.05);
