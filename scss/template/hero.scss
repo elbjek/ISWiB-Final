@@ -1,11 +1,9 @@
-.background{
 
 .hero{
     background-color: rgba( #FAA21A, $alpha: 1);
     position: relative;
-    background-image: url('../img/mainHero5.png');
-    background-blend-mode: overlay;   
-
+    // background-image: url('../img/mainHero5.png');
+    background-blend-mode: overlay;  
     &::before{
         width: 0;
         height: 0;
@@ -30,76 +28,57 @@
         padding:0;
         content:"";
     }
-
-
-    .content{
-        padding-top:15%;
-        padding-bottom: 15%;
-        display: flex;
-        flex-direction:column;
+    .hero2{
         
-        h1,h4,h5{
-            font-family: Lost in Wild;
-            padding:0px;
-            color:$blue;
+        
+        
+        .content{
+            padding-top:15%;
+            padding-bottom: 15%;
+            display: flex;
+            flex-direction:column;
+            
+            h1,h4,h5{
+                font-family: Lost in Wild;
+                padding:0px;
+                color:$blue;
+            }
+            h1{
+                font-size:150px;
+                color:$white;
+              
+            }
+   
+            h4{
+                padding-bottom: 100px;
+                text-align: left;
+               
+                  
+            }
         }
-        h1{
-            font-size:150px;
-            padding-top: 20px;
-            color:$white;
+        
+        .skew{
+            width:50%;
+            height:100px;
+            background-color:$orange;
+            position: absolute;
+            transform: skew(0,3deg);
+            margin:0px;
+            left:0px;
+            top:90%
         }
-
-        h4{
-            padding-bottom: 100px;
-            text-align: left;
-
+        .skewRight{
+            width:50%;
+            height:100px;
+            background-color:$orange;
+            position: absolute;
+            transform: skew(0,-3deg);
+            right:0px;
+            margin:0px;
+            top:90%;
         }
     }
     
-    .skew{
-        width:50%;
-        height:100px;
-        background-color:$orange;
-        position: absolute;
-        transform: skew(0,3deg);
-        margin:0px;
-        left:0px;
-        top:90%
-    }
-    .skewRight{
-        width:50%;
-        height:100px;
-        background-color:$orange;
-        position: absolute;
-        transform: skew(0,-3deg);
-        right:0px;
-        margin:0px;
-        top:90%;
-    }
 }
-
-}
-// .hero{
-    
-//     background-color: $orange;
-//     margin:0 auto;
-//     padding:0px;
-
-
-
-
-
-// .hero2{
-
-
-
-// }
-
-
-
-// }
-
-
-
 
 

@@ -1,12 +1,10 @@
 
 .overall{
 
-    background: url('../img/cover.jpg');
-    height: 50vh;
-    background-position: top;
-    background-repeat: no-repeat;
-    overflow: hidden;
-
+    background-color: rgba( #FAA21A, $alpha: 1);
+    position: relative;
+    background-image: url('../img/cover.jpg');
+   height:50vh;
 
     &::before{
         width: 0;
@@ -32,5 +30,6 @@
         padding:0;
         content:"";
     }
+
 
 }

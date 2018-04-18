@@ -1,41 +1,41 @@
 .gallery{
- 
-h1{
-    font-size: $large-font;
-    color:$blue;
-    padding:80px 0px 40px 0px;
-}
-  ul{
-      padding:20px 0px 10px 0px;
-      li{
-          display: inline;
-      
-          a{
-              color:$blue;
-              font-size: 17px;
-              
-          }
-      }
-  }
-  hr{
-      height:2px;
-      background-color: $orange;
-      width:100%;
-      margin:0px;
-  }
-
-.img{
-  max-width:150px;
-  height:150px;
-    overflow: hidden;
-    border:5px solid $orange;
-
-    padding:0px;
-    margin:20px;
-    &:hover{
-        transform: scale(1.0070);
-        box-shadow: 3px 3px 12px #898989;
-        transition: 0.05s ease;
+    
+    h1{
+        font-size: $large-font;
+        color:$blue;
+        padding:80px 0px 40px 0px;
     }
-}
+    ul{
+        padding:20px 0px 10px 0px;
+        li{
+            display: inline;
+            
+            a{
+                color:$blue;
+                font-size: 17px;
+                
+            }
+        }
+    }
+    hr{
+        height:2px;
+        background-color: $orange;
+        width:100%;
+        margin:0px;
+    }
+    
+    .img{
+        max-width:150px;
+        height:150px;
+        overflow: hidden;
+        border:5px solid $orange;
+        
+        padding:0px;
+        margin:20px;
+        &:hover{
+            transform: scale(1.0070);
+            box-shadow: 3px 3px 12px #898989;
+            transition: 0.05s ease;
+        }
+    }
 }
