@@ -5,7 +5,7 @@
     background:$blue;
     padding:10px 15px;
     transition: 1s  all ease;
-
+    
     
     a{
         color:$white;
@@ -42,16 +42,13 @@
         ul{
             li{
                 list-style-type: none;
-                margin:30px;
-                .dropdown-toggle:hover::after{
-                    padding:15px;
-                    display:none;
-                    
-                }
+                margin:25px;
                 a{
                     font-size: $small-font;
                     font-weight: 600;
                     padding:15px;
+                    display: block;
+                    //   margin:0px;
                     text-decoration: none;
                     color:$blue;
                     
@@ -73,6 +70,13 @@
             
         }
     }
+}
+
+.sticky{
+
+    position:sticky;
+    top:0px;
+    left:0px;
 }
 
 
