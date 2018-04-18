@@ -1,44 +1,67 @@
+
 var form = document.querySelector(' .address form');
-
-
 
 form.addEventListener('submit',function(event){
     
     event.preventDefault();
+
+    // name 
+    
     var name = document.querySelector('.name').value;
     
-    
-    // name & lastname isto ovo
-    
-    if(name == ""){
-        document.querySelector('.stagod').innerHTML = "Name is required";
+    var regex = /^[a-zA-Z ]{2,30}$/;
+    if (regex.test(name)) {
+        console.log(name);
+        document.querySelector('.myName').style.display = "none";
     }
-    
-    
-    if(name.charAt(0)== " "){
-        document.querySelector('.stagod').innerHTML = "Name cannot start with space";
+    else {
+        document.querySelector('.myName').innerHTML = "Name is required";
     }
-    console.log(name.charAt(0));
+
+    //last name
     
+    var lastname = document.querySelector('.lastname').value;
+    
+    if (regex.test(lastname)) {
+        console.log(lastname);
+        document.querySelector('.myLastname').style.display="none"; 
+    }
+    else {
+        document.querySelector('.myLastname').innerHTML = "Name is required";
+    }
     
     
     //email 
     
-    
-    
-    //regular expression
     var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     
     var mail = document.querySelector('.email').value;
     
     if(re.test(String(mail).toLowerCase())){
-console.log('')
+        console.log('Mail is bueno');
+        document.querySelector('.mail').style.display = "none";
     }else{
         
-        console.log("mejl niej dobar");
+        document.querySelector('.mail').innerHTML = "Please enter a valid e-mail";
     }
     
+    // textarea
+    
+    var textarea = document.querySelector('.textarea').value
+    if(textarea == ""){
+        document.querySelector('.myTextarea').innerHTML = "Please fill out the form";
+    } else{
+        document.querySelector('.myTextarea').style.display="none";
+    }
+    
+    
 })
+
+
+
+
+
+
 
 
 
