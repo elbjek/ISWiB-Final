@@ -74,7 +74,7 @@ function isScrolled() {
     var scrolled = window.pageYOffset;
 
     var weather = document.getElementById("weather");
-    var nav = document.querySelectorAll("navigation");
+    var nav = document.querySelectorAll("myNav");
     var announce = document.getElementById("announcement");
     console.log(nav.length);
     // if (scrolled > 45){
