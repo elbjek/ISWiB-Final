@@ -1,7 +1,7 @@
+var form = document.querySelector('form');
 
-var form = document.querySelector(' .address form');
-
-form.addEventListener('submit',function(event){
+console.log(form);
+form.addEventListener("submit",function(event){
     
     event.preventDefault();
 

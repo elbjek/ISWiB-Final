@@ -26,13 +26,12 @@
     
     .img{
         
-            // width:150px;
-        height:150px;
         overflow: hidden;
         border:5px solid $orange;
-        
         padding:0px;
         margin:20px;
+        background-color: $blue;
+
         &:hover{
             transform: scale(1.0070);
             box-shadow: 3px 3px 12px #898989;
