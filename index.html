@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>email validation</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+		<input type="text">
+
+
+
+	<script>
+		//selects input field
+		var inputField = document.querySelector('input');
+
+		//does validation when input is out of focus, other options on keydown or submit
+		inputField.addEventListener('focusout', function(){
+			validate(inputField.value)
+		})
+
+		//validation function
+		function validate (email) {
+			//regular expression
+			var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+			
+			//if valid border green if not border red
+			if(re.test(String(email).toLowerCase())){
+				inputField.style.borderColor = "green";
+			} else {
+				inputField.style.borderColor = "red";
+			}
+		}
+
+	</script>
+</body>
+</html>

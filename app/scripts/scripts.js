@@ -13,11 +13,4 @@ function markoFunkcija(args) {
 
     return true;
 }
-'use strict';
-
-var nav = document.getElementById('navigation');
-
-window.addEventListener('scroll', function () {
-
-  console.log(nav.offsetTop);
-});
+"use strict";
