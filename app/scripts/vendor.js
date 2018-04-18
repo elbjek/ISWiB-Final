@@ -52,8 +52,3 @@ request.onload = function() {
 };
 
 request.send();
-$(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-    });
-  });
