@@ -25,14 +25,15 @@ function isScrolled() {
     var ball = newLocal;
     if (scrolled > 45) {
 
-        weather.style.display = "none";
+        weather.style.visibility = "hidden";
         nav.classList.add('sticky');
-        announce.style.display = "none";
-        ball.style.display = "none";
+        announce.style.visibility = "hidden";
+        ball.style.visibility = "hidden";
         console.log("radi");
     } else {
-        weather.style.display = "block";
-        announce.style.display = "block";
+        weather.style.visibility = "visible";
+        announce.style.visibility = "visible";
+        ball.style.visibility = "visible";
     }
 }
 
