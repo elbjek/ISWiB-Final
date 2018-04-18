@@ -1,0 +1,36 @@
+
+.overall{
+
+    background: url('../img/cover.jpg');
+    height: 50vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+
+    &::before{
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid $white;
+        border-left: 50vw solid transparent;
+        position: absolute;
+        bottom:0;
+        right:0px;
+        margin:0;
+        padding:0;
+        content:"";
+    }
+    &::after{
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid $white;
+        border-right: 50vw solid transparent;
+        position: absolute;
+        bottom:0;
+        left:0px;
+        margin:0;
+        padding:0;
+        content:"";
+    }
+
+}
