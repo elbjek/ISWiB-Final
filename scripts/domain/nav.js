@@ -1,16 +1,30 @@
 
+
+
+
+
+
 function isScrolled(){
     var scrolled = window.pageYOffset;
-  //    is how much we have scrolled
     
-    if (scrolled > 0){
-      document.querySelector('button').classList.add('show');
-    }
-    else{
-      document.querySelector('button').classList.remove('show');
-    }
-  }
-  
-  
-  document.querySelector('button').addEventListener("click", scrollToTop);
-  window.addEventListener('scroll',isScrolled);
+    var weather = document.getElementById("weather");
+    var nav = document.querySelectorAll("navigation");
+    var announce = document.getElementById("announcement");
+    console.log(nav.length);
+    // if (scrolled > 45){
+    //     weather.style.display="none";
+    //     nav.classList.add('sticky');
+    //     // announce.style.display="none";
+    //     console.log("radi");
+    // }
+    // else{
+        
+
+
+
+    // }
+}
+
+
+
+window.addEventListener('scroll',isScrolled);
