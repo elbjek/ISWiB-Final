@@ -10,7 +10,6 @@ function scrollToTop(){
 }
 
 
-var heroHeight = document.getElementById('hero').clientHeight;
 
 function Scrolled(){
    
@@ -22,15 +21,10 @@ function Scrolled(){
     if (scrolled > 200){
         
         back.classList.add('back-fixed');
-      
-
     } 
     else{
         back.classList.remove('back-fixed');
     }
-
-    
-
 }
 
 

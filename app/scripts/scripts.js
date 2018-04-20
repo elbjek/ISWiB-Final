@@ -8,8 +8,6 @@ function scrollToTop() {
     }
 }
 
-var heroHeight = document.getElementById('hero').clientHeight;
-
 function Scrolled() {
 
     var scrolled = window.pageYOffset;
@@ -96,7 +94,18 @@ if (document.querySelector('form')) {
         }
     });
 }
-"use strict";
+'use strict';
+
+if (document.getElementById('links')) {
+    document.getElementById('links').onclick = function (event) {
+        event = event || window.event;
+        var target = event.target || event.srcElement,
+            link = target.src ? target.parentNode : target,
+            options = { index: link, event: event },
+            links = this.getElementsByTagName('a');
+        blueimp.Gallery(links, options);
+    };
+}
 'use strict';
 
 function isScrolled() {
@@ -116,4 +125,3 @@ function isScrolled() {
 
 //   document.querySelector('button').addEventListener("click", scrollToTop);
 window.addEventListener('scroll', isScrolled);
-"use strict";
