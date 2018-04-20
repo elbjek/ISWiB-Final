@@ -31,5 +31,8 @@ Logo, and 3 icons in Activities section, on landing page are animated.
 ///////////////
 
 
-Use Javascript properties to identify the browser & the compatibility with the Website
+###Use Javascript properties to identify the browser & the compatibility with the Website
+
+
+JS validated form, Scroll to top and shrinking navigation
 A PDF and README.md or README.txt that detail the layouts (responsive) and the JS techniques followed on the website
