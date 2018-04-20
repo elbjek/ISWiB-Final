@@ -3,7 +3,7 @@ function isScrolled(){
   //    is how much we have scrolled
     var nav = document.getElementById('navigation');
     var balloon = document.getElementById('balloon');
-    if (scrolled >50){
+    if (scrolled >45){
 
 nav.classList.add('navFixed');
 balloon.style.height="60px";

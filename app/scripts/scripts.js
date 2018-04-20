@@ -1,3 +1,14 @@
+"use strict";
+
+function scrollToTop() {
+  if (window.pageYOffset > 0) {
+
+    window.scrollBy(0, -20);
+    setTimeout(scrollToTop, 0);
+  }
+}
+
+document.querySelector('#back-to-top').addEventListener("click", scrollToTop);
 'use strict';
 
 agCookie.create('example-cookie', true, 1);
@@ -75,7 +86,7 @@ function isScrolled() {
     //    is how much we have scrolled
     var nav = document.getElementById('navigation');
     var balloon = document.getElementById('balloon');
-    if (scrolled > 50) {
+    if (scrolled > 45) {
 
         nav.classList.add('navFixed');
         balloon.style.height = "60px";

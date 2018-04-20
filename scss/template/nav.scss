@@ -33,7 +33,7 @@
             height:90px;
             // display: none;
             fill:$blue;
-            transition:2s ease;
+            transition:0.3s ease;
             &:hover{
                 transform: scale(1.05);
                 transition:1s all;
@@ -79,8 +79,8 @@
 
 // added classes
 .navFixed{
-position: sticky;
-transition: 0.5s ease;
+position: fixed;
+// transition: 0.5s ease;
 left:0;
 top:0;
 background-color:$white;
