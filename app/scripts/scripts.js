@@ -21,19 +21,16 @@ function isScrolled() {
     var weather = document.getElementById("weather");
     var nav = document.getElementById("navigation");
     var announce = document.getElementById("announcement");
-    var newLocal = document.getElementById("balloon");
-    var ball = newLocal;
+
     if (scrolled > 45) {
 
         weather.style.visibility = "hidden";
         nav.classList.add('sticky');
         announce.style.visibility = "hidden";
-        ball.style.visibility = "hidden";
         console.log("radi");
     } else {
         weather.style.visibility = "visible";
         announce.style.visibility = "visible";
-        ball.style.visibility = "visible";
     }
 }
 
@@ -94,4 +91,3 @@ form.addEventListener("submit", function (event) {
         document.querySelector('.myTextarea').style.display = "none";
     }
 });
-"use strict";

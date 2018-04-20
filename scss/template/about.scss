@@ -1,5 +1,32 @@
 #content{ 
-    padding:80px 15px 50px 15px;
+    // padding:80px 15px 50px 15px;
+    position: relative;
+   
+   .myContent{
+        &::before{
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid pink;
+        border-left: 50vw solid transparent;
+        position: absolute;
+        bottom:0;
+        right:0px;
+        margin:0;
+        padding:0;
+        content:"LOL";
+    }
+    &::after{
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid $white;
+        border-right: 50vw solid transparent;
+        position: absolute;
+        bottom:0;
+        left:0px;
+        margin:0;
+        padding:0;
+        content:"";
+    }
     h1{
         font-size: $large-font;
         font-weight: 300;
@@ -31,28 +58,9 @@
         font-weight:$bold;
         color:$blue;
     }
-    .skew{
-        width:50%;
-        height:100px;
-        background-color:$white;
-        position: absolute;
-        transform: skew(0,3deg);
-        z-index: 6;
-        margin:0px;
-        left:0px;
-    }
-    .skewRight{
-        width:50%;
-        height:100px;
-        background-color:$white;
-        position: absolute;
-        transform: skew(0,-3deg);
-        z-index:5;
-        right:0px;
-        margin:0px;
-    }
+
     
     
-    
+}
 }
 
