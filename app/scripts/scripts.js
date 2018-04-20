@@ -13,16 +13,7 @@ function markoFunkcija(args) {
 
     return true;
 }
-'use strict';
-
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = { index: link, event: event },
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
+"use strict";
 
 function isScrolled() {
     var scrolled = window.pageYOffset;
@@ -44,6 +35,15 @@ function isScrolled() {
 }
 
 window.addEventListener('scroll', isScrolled);
+
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = { index: link, event: event },
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
 
 var form = document.querySelector('form');
 
