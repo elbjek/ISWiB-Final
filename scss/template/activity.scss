@@ -1,9 +1,32 @@
-.third{
+.activities{
     background-color:$blue;
     position: relative;
-    padding: 80px 0px 80px 0px;
     text-align: right;
-    
+    padding:80px 0px 160px 0px;
+    &::before{
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid $white;
+        border-left: 50vw solid transparent;
+        position: absolute;
+        bottom:0;
+        right:0px;
+        margin:0;
+        padding:0;
+        content:"";
+    }
+    &::after{
+        width: 0;
+        height: 0;
+        border-bottom: 100px solid $white;
+        border-right: 50vw solid transparent;
+        position: absolute;
+        bottom:0;
+        left:0px;
+        margin:0;
+        padding:0;
+        content:"";
+    }
     .content{
         text-align: center;
         
@@ -13,7 +36,7 @@
         h1{
             font-size:$large-font;
             color:$white;
-            margin:80px 0px 50px 0px;
+            // margin:80px 0px 50px 0px;
         }
         .box{ 
             padding:30px 30px;
@@ -34,14 +57,21 @@
                 margin-bottom: 20px;
             }
             p{
-                // width:0%;
+              // width:0%;
                 color:$blue;
                 margin-bottom:20px;
                 text-align: left;
                 font-size: 18px;
             }
             
-       
+            .button-orange{
+                font-size:$medium-font;
+                padding:10px 40px;
+                background-color: $orange;
+                border-radius: 30px;
+                font-weight:$bold;
+                color:$blue;
+			}
             
             &:hover #wheel{
                 
@@ -142,7 +172,7 @@
             height:3px;
             background-color: $white;
             width:100%;
-            margin:10px 0px 20px 0px;;
+            margin:10px 0px 0px 0px;
         }
     }
     

@@ -1,12 +1,12 @@
 #content{ 
-    // padding:80px 15px 50px 15px;
+
     position: relative;
    
    .myContent{
         &::before{
         width: 0;
         height: 0;
-        border-bottom: 100px solid pink;
+        border-bottom: 100px solid $blue;
         border-left: 50vw solid transparent;
         position: absolute;
         bottom:0;
@@ -18,7 +18,7 @@
     &::after{
         width: 0;
         height: 0;
-        border-bottom: 100px solid $white;
+        border-bottom: 100px solid $blue;
         border-right: 50vw solid transparent;
         position: absolute;
         bottom:0;
@@ -31,7 +31,7 @@
         font-size: $large-font;
         font-weight: 300;
         color:$blue;
-        padding-top: 80px;
+        padding-top: 100px;
         &::after{        
             content:"Lead";
             font-weight: 800;
@@ -57,6 +57,7 @@
         border-radius: 30px;
         font-weight:$bold;
         color:$blue;
+        margin-bottom: 100px;
     }
 
     
