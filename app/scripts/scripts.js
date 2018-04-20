@@ -67,4 +67,10 @@ form.addEventListener("submit", function (event) {
         document.querySelector('.myTextarea').style.display = "none";
     }
 });
+'use strict';
+
+var svg = document.getElementById('myBalloon');
+var svgDoc = svg.contentDocument;
+var balloon = svg.Doc.getElementById('balloon');
+balloon.setAttribute('height', '60px');
 "use strict";
