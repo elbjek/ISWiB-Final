@@ -100,3 +100,4 @@ form.addEventListener("submit", function (event) {
         document.querySelector('.myTextarea').style.display = "none";
     }
 });
+"use strict";
