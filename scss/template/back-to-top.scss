@@ -15,3 +15,11 @@
     }
 }
 
+
+.back-fixed{
+	position:fixed;
+	right:0;
+	bottom:0;
+	z-index:999;
+	background-color: rgba($color: #F5F5F5, $alpha: 1);
+}	

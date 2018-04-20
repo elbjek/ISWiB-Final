@@ -1,14 +1,31 @@
-"use strict";
+'use strict';
 
 function scrollToTop() {
-  if (window.pageYOffset > 0) {
+    if (window.pageYOffset > 0) {
 
-    window.scrollBy(0, -20);
-    setTimeout(scrollToTop, 0);
-  }
+        window.scrollBy(0, -20);
+        setTimeout(scrollToTop, 0);
+    }
 }
 
-document.querySelector('#back-to-top').addEventListener("click", scrollToTop);
+var heroHeight = document.getElementById('hero').clientHeight;
+
+function Scrolled() {
+
+    var scrolled = window.pageYOffset;
+
+    var back = document.getElementById('back-to-top');
+
+    if (scrolled > 200) {
+
+        back.classList.add('back-fixed');
+    } else {
+        back.classList.remove('back-fixed');
+    }
+}
+
+document.getElementById('back-to-top').addEventListener("click", scrollToTop);
+window.addEventListener('scroll', Scrolled);
 'use strict';
 
 agCookie.create('example-cookie', true, 1);
@@ -79,6 +96,7 @@ if (document.querySelector('form')) {
         }
     });
 }
+"use strict";
 'use strict';
 
 function isScrolled() {
