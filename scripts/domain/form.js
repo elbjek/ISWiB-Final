@@ -1,55 +1,11 @@
 
-function isScrolled(){
-    var scrolled = window.pageYOffset;
-    
-    var weather = document.getElementById("weather");
-    var nav = document.getElementById("navigation");
-    var announce = document.getElementById("announcement");
-
-    if (scrolled > 45){
-        
-        weather.style.visibility="hidden";
-        nav.classList.add('sticky');
-        announce.style.visibility="hidden";
-        console.log("radi");
-    }
-    else{
-        weather.style.visibility="visible";
-        announce.style.visibility="visible";
-
-
-    }
-}
-
-
-
-window.addEventListener('scroll',isScrolled);
-
-document.getElementById('links').onclick = function (event) {
-    event = event || window.event;
-    var target = event.target || event.srcElement,
-        link = target.src ? target.parentNode : target,
-        options = {index: link, event: event},
-        links = this.getElementsByTagName('a');
-    blueimp.Gallery(links, options);
-};
-
-
-
-
-
-
 var form = document.querySelector('form');
-
-// console.log(form.length[0]);
-
-
 
 
 form.addEventListener("submit",function(event){
     
     event.preventDefault();
-
+    
     // name 
     
     var name = document.querySelector('.name').value;
@@ -62,7 +18,7 @@ form.addEventListener("submit",function(event){
     else {
         document.querySelector('.myName').innerHTML = "Name is required";
     }
-
+    
     //last name
     
     var lastname = document.querySelector('.lastname').value;
@@ -101,6 +57,7 @@ form.addEventListener("submit",function(event){
     
     
 })
+
 
 
 
