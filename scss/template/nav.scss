@@ -4,7 +4,7 @@
     
     background:$blue;
     padding:10px 15px;
-    transition: 1s   ease-in-out;
+    // transition: 0.5s   ease-in-out;
     
     
     a{
@@ -18,10 +18,10 @@
 
 
 #navigation{
-    background:$white;
+    background-color:$white;
     width:100%;
     margin:0 auto;
-    transition: 1s ease-in-out;
+
   
     .brand{
         a{
@@ -31,8 +31,9 @@
         }
         #balloon{
             height:90px;
-            display:none;
+            // display: none;
             fill:$blue;
+            transition:2s ease;
             &:hover{
                 transform: scale(1.05);
                 transition:1s all;
@@ -76,4 +77,13 @@
 
 
 
-
+// added classes
+.navFixed{
+position: sticky;
+transition: 0.5s ease;
+left:0;
+top:0;
+background-color:$white;
+border-bottom: 1px solid $blue;
+z-index: 1;
+}

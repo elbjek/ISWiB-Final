@@ -15,62 +15,76 @@ function markoFunkcija(args) {
 }
 'use strict';
 
-var form = document.querySelector('form');
+if (document.querySelector('form')) {
 
-form.addEventListener("submit", function (event) {
+    form.addEventListener("submit", function (event) {
 
-    event.preventDefault();
+        event.preventDefault();
 
-    // name 
+        // name 
 
-    var name = document.querySelector('.name').value;
+        var name = document.querySelector('.name').value;
 
-    var regex = /^[a-zA-Z ]{2,30}$/;
-    if (regex.test(name)) {
-        console.log(name);
-        document.querySelector('.myName').style.display = "none";
-    } else {
-        document.querySelector('.myName').innerHTML = "Name is required";
-    }
+        var regex = /^[a-zA-Z ]{2,30}$/;
+        if (regex.test(name)) {
+            console.log(name);
+            document.querySelector('.myName').style.display = "none";
+        } else {
+            document.querySelector('.myName').innerHTML = "Name is required";
+        }
 
-    //last name
+        //last name
 
-    var lastname = document.querySelector('.lastname').value;
+        var lastname = document.querySelector('.lastname').value;
 
-    if (regex.test(lastname)) {
-        console.log(lastname);
-        document.querySelector('.myLastname').style.display = "none";
-    } else {
-        document.querySelector('.myLastname').innerHTML = "Name is required";
-    }
+        if (regex.test(lastname)) {
+            console.log(lastname);
+            document.querySelector('.myLastname').style.display = "none";
+        } else {
+            document.querySelector('.myLastname').innerHTML = "Name is required";
+        }
 
-    //email 
+        //email 
 
-    var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+        var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
-    var mail = document.querySelector('.email').value;
+        var mail = document.querySelector('.email').value;
 
-    if (re.test(String(mail).toLowerCase())) {
-        console.log('Mail is bueno');
-        document.querySelector('.mail').style.display = "none";
-    } else {
+        if (re.test(String(mail).toLowerCase())) {
+            console.log('Mail is bueno');
+            document.querySelector('.mail').style.display = "none";
+        } else {
 
-        document.querySelector('.mail').innerHTML = "Please enter a valid e-mail";
-    }
+            document.querySelector('.mail').innerHTML = "Please enter a valid e-mail";
+        }
 
-    // textarea
+        // textarea
 
-    var textarea = document.querySelector('.textarea').value;
-    if (textarea == "") {
-        document.querySelector('.myTextarea').innerHTML = "Please fill out the form";
-    } else {
-        document.querySelector('.myTextarea').style.display = "none";
-    }
-});
+        var textarea = document.querySelector('.textarea').value;
+        if (textarea == "") {
+            document.querySelector('.myTextarea').innerHTML = "Please fill out the form";
+        } else {
+            document.querySelector('.myTextarea').style.display = "none";
+        }
+    });
+}
 'use strict';
 
-var svg = document.getElementById('myBalloon');
-var svgDoc = svg.contentDocument;
-var balloon = svg.Doc.getElementById('balloon');
-balloon.setAttribute('height', '60px');
+function isScrolled() {
+    var scrolled = window.pageYOffset;
+    //    is how much we have scrolled
+    var nav = document.getElementById('navigation');
+    var balloon = document.getElementById('balloon');
+    if (scrolled > 50) {
+
+        nav.classList.add('navFixed');
+        balloon.style.height = "60px";
+    } else {
+        nav.classList.remove('navFixed');
+        balloon.style.height = "90px";
+    }
+}
+
+//   document.querySelector('button').addEventListener("click", scrollToTop);
+window.addEventListener('scroll', isScrolled);
 "use strict";
