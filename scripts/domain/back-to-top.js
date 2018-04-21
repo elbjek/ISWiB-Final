@@ -18,8 +18,8 @@ function Scrolled(){
     var back = document.getElementById('back-to-top');   
     
     
-    if (scrolled > 200){
-        
+    if (scrolled > 200 ){
+     
         back.classList.add('back-fixed');
     } 
     else{

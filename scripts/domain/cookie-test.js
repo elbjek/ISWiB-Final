@@ -1,13 +1,13 @@
-agCookie.create('example-cookie', true, 1);
+// agCookie.create('example-cookie', true, 1);
 
-var readValue = agCookie.read('example-cookie');
+// var readValue = agCookie.read('example-cookie');
 
-console.log(readValue);
+// // console.log(readValue);
 
-agCookie.erase('example-cookie');
+// agCookie.erase('example-cookie');
 
-function markoFunkcija(args) {
-    console.log(args);
+// function markoFunkcija(args) {
+//     // console.log(args);
     
-    return true;
-}
+//     return true;
+// }
