@@ -18,7 +18,7 @@ Contact page is validated
 Gallery page.
 
 ###  At least two of the photos in Image Gallery must be retouched demonstrating the differences (before & after)
-Hero section and Our Team section on the landing page. 
+Hero section and Our Team section on the landing page.  Our Team section (on landing page) has collapsable information
 
 
 ### Use of AJAX technique for loading data from XML/JSON into the website
@@ -35,4 +35,8 @@ Logo, and 3 icons in Activities section, on landing page are animated.
 
 
 JS validated form, Scroll to top and shrinking navigation
-A PDF and README.md or README.txt that detail the layouts (responsive) and the JS techniques followed on the website
+
+
+
+
+<!-- A PDF and README.md or README.txt that detail the layouts (responsive) and the JS techniques followed on the website -->
