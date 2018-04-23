@@ -18,7 +18,7 @@ Contact page is validated
 Gallery page.
 
 ###  At least two of the photos in Image Gallery must be retouched demonstrating the differences (before & after)
-Hero section and Our Team section on the landing page.  Our Team section (on landing page) has collapsable information
+Hero section and Our Team section on the landing page.  Our Team section (on landing page) has collapsable information.
 
 
 ### Use of AJAX technique for loading data from XML/JSON into the website
