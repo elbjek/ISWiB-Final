@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.1.0",
+    "gulp-update": "0.0.2",
     "sass": "^1.1.1",
     "svg.js": "^2.6.4",
     "watch": "^1.0.2"
